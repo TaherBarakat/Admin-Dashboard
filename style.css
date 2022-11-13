@@ -12,13 +12,13 @@ html {
    font-size: 62.5%;
 }
 p {
-   font-size: 1.5rem;
+   font-size: 1rem;
+   color: #6b6b6b;
 }
 /* sidebar  */
 .sidebar {
-   width: 20vw;
-   height: 100vh;
-   background-color: aqua;
+   background-color: #1992d4;
+   padding: 2rem;
 }
 
 .sidebar ul {
@@ -33,7 +33,7 @@ p {
    display: grid;
    grid-template-columns: 1fr 9fr;
    gap: 0.3rem;
-   font-size: 2rem;
+   font-size: 1.8rem;
    align-items: center;
 }
 .logo {
@@ -63,7 +63,7 @@ p {
 header {
    display: grid;
    grid-template: 1fr 1fr / 2fr 1fr;
-   padding: 2rem 5rem;
+   padding: 1rem 5rem;
    justify-content: center;
    align-items: center;
    gap: 2rem 0;
@@ -78,9 +78,10 @@ header img {
 }
 header input {
    border: 0;
-   box-shadow: black 0px 0px 1px 1px;
-   background-color: rgba(128, 128, 128, 0.226);
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   background-color: rgba(128, 128, 128, 0.048);
    height: 3vh;
+   padding: 1rem;
    width: 95%;
    outline: none;
    border-radius: 20px;
@@ -90,7 +91,7 @@ header input {
    border-radius: 50%;
    width: 4rem;
    height: 4rem;
-   background-color: blue;
+   background-color: #facc15;
    margin-right: 1rem;
 }
 .profile-info h2 {
@@ -118,7 +119,7 @@ header input {
 }
 .options ul li {
    padding: 0.5rem 2rem;
-   background-color: aqua;
+   background-color: #1992d4;
    border-radius: 15px;
    font-size: 1.5rem;
 }
@@ -158,7 +159,7 @@ header input {
    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
    border-radius: 5px;
    padding: 2rem;
-   border-left: yellow solid 0.5rem;
+   border-left: #facc15 solid 0.5rem;
 }
 .content .interactions {
    display: flex;
@@ -187,7 +188,7 @@ header input {
    height: 80%;
 }
 .trending-items .container .profile-pic {
-   background-color: yellow;
+   background-color: #facc15;
    margin-right: 3rem;
    grid-row: 1/-1;
 }
@@ -195,4 +196,26 @@ header input {
    padding: 1rem;
    display: grid;
    grid-template: 1fr 1fr/1fr 5fr;
+}
+/* overall layout */
+main {
+   display: grid;
+   grid-template: 1fr 8fr/1fr 10fr;
+   height: 100vh;
+   width: 100vw;
+}
+.main-content {
+}
+header {
+   height: 100%;
+   grid-column: 2/3;
+   grid-row: 1/2;
+}
+.sidebar {
+   height: 100%;
+   grid-column: 1/2;
+   grid-row: 1/-1;
+}
+h1 {
+   font-size: 2rem;
 }
