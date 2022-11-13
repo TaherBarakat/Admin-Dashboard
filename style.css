@@ -122,3 +122,77 @@ header input {
    border-radius: 15px;
    font-size: 1.5rem;
 }
+/* main content */
+.main-content {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template: 1fr 1fr/3fr 1fr;
+   gap: 2rem;
+   padding: 1rem;
+}
+.main-content p {
+   font-size: 1rem;
+}
+.main-content h2,
+.main-content h3 {
+   font-size: 1.5rem;
+}
+.container {
+   display: grid;
+}
+
+.projects {
+   grid-column: 1/2;
+   grid-row: 1/-1;
+}
+.projects .container {
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+.projects img {
+   width: 1.5rem;
+   margin: 0.5em;
+}
+.content {
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   border-radius: 5px;
+   padding: 2rem;
+   border-left: yellow solid 0.5rem;
+}
+.content .interactions {
+   display: flex;
+   justify-content: end;
+   align-items: baseline;
+   margin: 1rem;
+}
+.main-content h2 {
+   margin-bottom: 2rem;
+}
+
+.announcements .container {
+   grid-template-rows: repeat(3, 1fr);
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   padding: 1rem;
+   height: 80%;
+}
+.annaounsment {
+   padding: 1rem;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+}
+.trending-items .container {
+   grid-template-columns: fr;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   padding: 1rem;
+   height: 80%;
+}
+.trending-items .container .profile-pic {
+   background-color: yellow;
+   margin-right: 3rem;
+   grid-row: 1/-1;
+}
+.item {
+   padding: 1rem;
+   display: grid;
+   grid-template: 1fr 1fr/1fr 5fr;
+}
